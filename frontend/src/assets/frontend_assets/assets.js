@@ -10,6 +10,13 @@ import menu_5 from './menu_5.png'
 import menu_6 from './menu_6.png'
 import menu_7 from './menu_7.png'
 import menu_8 from './menu_8.png'
+import menu_9 from './menu_9.png';
+import menu_10 from './menu_10.png';
+import menu_11 from './menu_11.png';
+import menu_12 from './menu_12.png';
+import menu_13 from './menu_13.png';
+import menu_14 from './menu_14.png';
+
 
 import food_1 from './food_1.png'
 import food_2 from './food_2.png'
@@ -84,37 +91,63 @@ export const assets = {
 
 export const menu_list = [
     {
-        menu_name: "Salad",
+        menu_name: "Soups",
         menu_image: menu_1
     },
     {
-        menu_name: "Rolls",
+        menu_name: "Veg Starters",
         menu_image: menu_2
     },
     {
-        menu_name: "Deserts",
+        menu_name: "Non-Veg Starters",
         menu_image: menu_3
     },
     {
-        menu_name: "Sandwich",
+        menu_name: "Sea Food",
         menu_image: menu_4
     },
     {
-        menu_name: "Cake",
+        menu_name: "Rice Items",
         menu_image: menu_5
     },
     {
-        menu_name: "Pure Veg",
+        menu_name: "Combos",
         menu_image: menu_6
     },
     {
-        menu_name: "Pasta",
+        menu_name: "Indian Veg Curries",
         menu_image: menu_7
     },
     {
-        menu_name: "Noodles",
+        menu_name: "Indian Non-Veg Curries",
         menu_image: menu_8
-    }]
+    },
+    {
+        menu_name: "Veg Biryani",
+        menu_image: menu_9
+    },
+    {
+        menu_name: "Non-Veg Biryani",
+        menu_image: menu_10
+    },
+    {
+        menu_name: "Chinese",
+        menu_image: menu_11
+    },
+    {
+        menu_name: "Cooker Pulao",
+        menu_image: menu_12
+    },
+    {
+        menu_name: "Tandoori",
+        menu_image: menu_13
+    },
+    {
+        menu_name: "Roties",
+        menu_image: menu_14
+    }
+];
+
 
 export const food_list = [
     {

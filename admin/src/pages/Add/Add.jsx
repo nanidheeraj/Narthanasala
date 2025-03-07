@@ -57,22 +57,7 @@ const Add = ({url}) => {
   return (
     <div className="add">
       <form onSubmit={onSubmitHandler} className="flex-col">
-        <div className="add-img-upload flex-col">
-          <p>Upload image</p>
-          <label htmlFor="image">
-            <img
-              src={image ? URL.createObjectURL(image) : assets.upload_area}
-              alt=""
-            />
-          </label>
-          <input
-            onChange={(e) => setImage(e.target.files[0])}
-            type="file"
-            id="image"
-            hidden
-            required
-          />
-        </div>
+        
         <div className="add-product-name flex-col">
           <p>Product name</p>
           <input
@@ -104,14 +89,21 @@ const Add = ({url}) => {
               onChange={onChangeHandler}
               value={data.category}
             >
-              <option value="Salad">Salad</option>
-              <option value="Rolls">Rolls</option>
-              <option value="Deserts">Deserts</option>
-              <option value="Sandwich">Sandwich</option>
-              <option value="Cake">Cake</option>
-              <option value="Pure Veg">Pure Veg</option>
-              <option value="Pasta">Pasta</option>
-              <option value="Noodles">Noodles</option>
+              <option value="Soups">Soups</option>
+              <option value="Veg Starters">Veg Starters</option>
+              <option value="Non-Veg Starters">Non-Veg Starters</option>
+              <option value="Sea Food">Sea Food</option>
+              <option value="Rice Items">Rice Items</option>
+              <option value="Combos">Combos</option>
+              <option value="Indian Veg Curries">Indian Veg Curries</option>
+              <option value="Indian Non-Veg Curries">Indian Non-Veg Curries</option>
+              <option value="Veg Biryani">Veg Biryani</option>
+              <option value="Non-Veg Biryani">Non-Veg Biryani</option>
+              <option value="Chinese">Chinese</option>
+              <option value="Cooker Pulao">Cooker Pulao</option>
+              <option value="Tandoori">Tandoori</option>
+              <option value="Roties">Roties</option>
+
             </select>
           </div>
           <div className="add-price flex-col">
@@ -121,7 +113,7 @@ const Add = ({url}) => {
               value={data.price}
               type="Number"
               name="price"
-              placeholder="$20"
+              placeholder="₹20"
               required
             />
           </div>

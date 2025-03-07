@@ -15,7 +15,7 @@ const ExploreMenu = ({category,setCategory}) => {
         {menu_list.map((item, index) => {
           return (
             <div onClick={()=>setCategory(prev=>prev===item.menu_image.name?"All":item.menu_name)} key={index} className="explore-menu-list-item">
-              <img className={category===item.menu_name?"active":""} src={item.menu_image} alt="" />
+              <img className={category===item.menu_name?"active":""} src={item.menu_image} alt="" width={150} height={100}/>
               <p>{item.menu_name}</p>
             </div>
           );
