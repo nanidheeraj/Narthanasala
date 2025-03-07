@@ -11,7 +11,6 @@ import {useNavigate } from "react-router-dom";
 const Add = ({url}) => {
   const navigate=useNavigate();
   const {token,admin} = useContext(StoreContext);
-  const [image, setImage] = useState(false);
   const [data, setData] = useState({
     name: "",
     description: "",
@@ -32,7 +31,6 @@ const Add = ({url}) => {
     formData.append("description", data.description);
     formData.append("price", Number(data.price));
     formData.append("category", data.category);
-    formData.append("image", image);
 
     const response = await axios.post(`${url}/api/food/add`, formData,{headers:{token}});
     if (response.data.success) {
@@ -42,7 +40,6 @@ const Add = ({url}) => {
         price: "",
         category: "Salad",
       });
-      setImage(false);
       toast.success(response.data.message);
     } else {
       toast.error(response.data.message);
