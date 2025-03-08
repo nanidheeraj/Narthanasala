@@ -1,7 +1,18 @@
 import React from "react";
 import "./Header.css";
-
+import { useNavigate } from "react-router-dom";
 const Header = () => {
+  const navigate = useNavigate();
+
+  const handleViewMenu = () => {
+    navigate("/");
+    setTimeout(() => {
+      const section = document.getElementById("explore-menu");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  };
   return (
     <div className="header">
       <div className="header-contents">
@@ -12,7 +23,7 @@ const Header = () => {
           mission is to satisfy your cravings and elevate your dining
           experience, one delicious meal at a time.
         </p>
-        <button>View Menu</button>
+        <button onClick={handleViewMenu}>View Menu</button>
       </div>
     </div>
   );

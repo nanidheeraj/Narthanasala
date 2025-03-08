@@ -15,7 +15,7 @@ const Add = ({url}) => {
     name: "",
     description: "",
     price: "",
-    category: "Salad",
+    category: "Soups",
   });
 
   const onChangeHandler = (event) => {
@@ -38,7 +38,7 @@ const Add = ({url}) => {
         name: "",
         description: "",
         price: "",
-        category: "Salad",
+        category: "Soups",
       });
       toast.success(response.data.message);
     } else {

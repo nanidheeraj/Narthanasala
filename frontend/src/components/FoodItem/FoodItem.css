@@ -38,6 +38,7 @@
 }
 .food-item-img-container{
     position: relative;
+    top: 20px;
 }
 .food-item-img-container .add{
     position: absolute;

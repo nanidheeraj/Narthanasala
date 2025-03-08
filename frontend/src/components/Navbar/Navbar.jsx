@@ -30,12 +30,23 @@ const Navbar = ({ setShowLogin }) => {
           home
         </Link>
         <a
-          href="#explore-menu"
-          onClick={() => setMenu("menu")}
-          className={menu === "menu" ? "active" : ""}
-        >
-          menu
-        </a>
+  href="#"
+  onClick={(e) => {
+    e.preventDefault();
+    navigate("/");
+    setTimeout(() => {
+      const section = document.getElementById("explore-menu");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+    setMenu("menu");
+  }}
+  className={menu === "menu" ? "active" : ""}
+>
+  menu
+</a>
+
         <a
           href="#app-download"
           onClick={() => setMenu("mobile-app")}
