@@ -1,0 +1,21 @@
+/* H1 Styling */
+.main-heading {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .main-heading {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-heading {
+    font-size: 20px;
+  }
+}
