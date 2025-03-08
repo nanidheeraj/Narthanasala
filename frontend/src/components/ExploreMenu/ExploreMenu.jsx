@@ -5,7 +5,9 @@ import { menu_list } from "../../assets/frontend_assets/assets";
 const ExploreMenu = ({category,setCategory}) => {
   return (
     <div className="explore-menu" id="explore-menu">
-      <h1>Explore our menu</h1>
+      <h1>Welcome to Narthanasala - Authentic South Indian Cuisine</h1>
+      <h2>Explore Our Delicious Menu</h2>
+      
       <p className="explore-menu-text">
         Choose from a diverse menu featuring a detectable array of dishes. Our
         mission is to satisfy your cravings and elevate your dining experience,
