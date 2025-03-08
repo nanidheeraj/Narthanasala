@@ -1,0 +1,21 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Narthanasala",
+  "description": "Savor the authentic taste of South Indian cuisine with our freshly made dosas, idlis, and more.",
+  "image": "https://narthanasala.vercel.app/public/images/restaurant-banner.jpg",
+  "url": "https://narthanasala.vercel.app/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "123 South Indian Street",
+    "addressLocality": "Hyderabad",
+    "addressRegion": "Telangana",
+    "postalCode": "500001",
+    "addressCountry": "IN"
+  },
+  "telephone": "+91 98765 43210",
+  "servesCuisine": "South Indian",
+  "priceRange": "$$",
+  "openingHours": "Mo-Su 08:00-22:00",
+  "menu": "https://narthanasala.vercel.app/menu"
+}
