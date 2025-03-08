@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://narthanasala.vercel.app/sitemap.xml
